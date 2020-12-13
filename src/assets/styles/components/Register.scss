@@ -86,3 +86,9 @@
     width: 30px;
     margin-right: 10px;
 }
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white !important;
+    text-decoration: none !important;
+}

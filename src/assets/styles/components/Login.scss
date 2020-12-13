@@ -1,3 +1,6 @@
+* {
+    box-sizing: content-box!important;
+}
 
 .login {
     background: linear-gradient(#21c08b, #ab88ff);
@@ -112,9 +115,9 @@
     color: white;
     font-weight: bold;
     font-size: 16px;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 .logn__container--register a:hover{
-    text-decoration: underline;    
+    text-decoration: underline;
 }
