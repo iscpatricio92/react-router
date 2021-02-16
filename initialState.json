@@ -1,10 +1,9 @@
 {
-    "initalState": {
-      "mylist": [
-        
-      ],
-      "trends": [
-        {
+  "user":{},
+  "playing": {},
+  "myList": [],
+  "trends": [
+          {
           "id": 2,
           "slug": "tvshow-2",
           "title": "In the Dark",
@@ -16,8 +15,8 @@
           "cover": "http://dummyimage.com/800x600.png/99118E/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 3,
           "slug": "tvshow-3",
           "title": "Instinct",
@@ -29,8 +28,8 @@
           "cover": "http://dummyimage.com/800x600.png/302140/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 4,
           "slug": "tvshow-4",
           "title": "Grand Hotel",
@@ -42,8 +41,8 @@
           "cover": "http://dummyimage.com/800x600.png/5472FF/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 5,
           "slug": "tvshow-5",
           "title": "Stargate Atlantis",
@@ -55,8 +54,8 @@
           "cover": "http://dummyimage.com/800x600.png/B36F20/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 6,
           "slug": "tvshow-6",
           "title": "Final Space",
@@ -68,8 +67,8 @@
           "cover": "http://dummyimage.com/800x600.png/CCC539/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 7,
           "slug": "tvshow-7",
           "title": "The InBetween",
@@ -81,10 +80,10 @@
           "cover": "http://dummyimage.com/800x600.png/FF7A90/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        }
+          }
       ],
       "originals": [
-        {
+          {
           "id": 8,
           "slug": "tvshow-8",
           "title": "Stargate Atlantis",
@@ -96,8 +95,8 @@
           "cover": "http://dummyimage.com/800x600.png/306880/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 9,
           "slug": "tvshow-9",
           "title": "Alien Highway",
@@ -109,8 +108,8 @@
           "cover": "http://dummyimage.com/800x600.png/604180/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 10,
           "slug": "tvshow-10",
           "title": "Elementary",
@@ -122,8 +121,8 @@
           "cover": "http://dummyimage.com/800x600.png/FF91BA/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 11,
           "slug": "tvshow-11",
           "title": "Strange Angel",
@@ -135,8 +134,8 @@
           "cover": "http://dummyimage.com/800x600.png/45807C/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 12,
           "slug": "tvshow-12",
           "title": "Private Eyes",
@@ -148,8 +147,8 @@
           "cover": "http://dummyimage.com/800x600.png/577380/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        },
-        {
+          },
+          {
           "id": 13,
           "slug": "tvshow-13",
           "title": "NCIS: Los Angeles",
@@ -161,7 +160,6 @@
           "cover": "http://dummyimage.com/800x600.png/5472FF/ffffff",
           "description": "Vestibulum ac est lacinia nisi venenatis tristique",
           "source": "https://mdstrm.com/video/58333e214ad055d208427db5.mp4"
-        }
-      ]
-    }
-  }
+          }
+  ]
+}
