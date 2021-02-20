@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
-import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
-import {loginRequest} from '../actions';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { loginRequest } from '../actions';
 import Header from '../components/Header';
 import '../assets/styles/components/Login.scss';
 import googleIcon from '../assets/static/google-icon.png';
 import twitterIcon from '../assets/static/twitter-icon.png';
 
 
-const Login = props =>{
+const Login = props => {
     const [form, setValues] = useState({
         email: '',
     });
@@ -20,7 +20,7 @@ const Login = props =>{
         })
     }
 
-    const handleSumit = event =>{
+    const handleSumit = event => {
         event.preventDefault();
         props.loginRequest(form);
         props.history.push('/');
@@ -28,9 +28,9 @@ const Login = props =>{
 
     return (
         <>
-            <Header isLogin/>
-            <section    className="login">
-            <div className="login__container">
+            <Header isLogin />
+            <section className="login">
+                <div className="login__container">
                     <h2>Inicia sesión</h2>
                     <form className="login__container--form" onSubmit={handleSumit}>
                         <input
@@ -52,7 +52,9 @@ const Login = props =>{
                             <label>
                                 <input type="checkbox" name="" id="cbox1" value="checkbos" />Recuerdame
                             </label>
-                            <a href="/">Olvidé mi contraseña</a>
+                            <Link to='/'>
+                                Olvidé mi contraseña
+                    </Link>
                         </div>
                     </form>
                     <section className="login__container--social-media">
@@ -63,12 +65,12 @@ const Login = props =>{
                             <img src={twitterIcon} alt="Google" />Inicia sesión con twitter
                         </div>
                     </section>
-                    <p className="logn__container--register">No tienes ninguna cuenta <br/>
-                    <Link to='/register'>
-                        REGISTRATE
+                    <p className="logn__container--register">No tienes ninguna cuenta <br />
+                        <Link to='/register'>
+                            REGISTRATE
                     </Link>
                     </p>
-            </div>
+                </div>
             </section>
         </>
     );
