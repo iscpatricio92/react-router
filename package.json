@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production",
-    "start": "webpack serve --mode development --env development",
-    "start:dev": "nodemon src/server/index"
+    "build": "webpack-cli --config webpack.config.js",
+    "start:dev": "dotenv -e .env.test nodemon src/server/index",
+    "start:prod": "dotenv -e .env.prod node src/server"
   },
   "keywords": [
     "Js",
@@ -21,7 +21,9 @@
     "classname": "0.0.0",
     "classnames": "^2.3.1",
     "dotenv": "^8.6.0",
+    "dotenv-cli": "^4.0.0",
     "express": "^4.17.1",
+    "helmet": "^3.21.2",
     "history": "^5.0.1",
     "ignore-styles": "^5.0.1",
     "md5": "^2.3.0",
@@ -48,7 +50,7 @@
     "css-loader": "^5.2.7",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
-    "eslint-plugin-import": "^2.24.1",
+    "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "file-loader": "^6.2.0",

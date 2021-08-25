@@ -7,7 +7,6 @@ import { createBrowserHistory } from 'history';
 import reducer from './reducers';
 import App from './routes/App';
 
-
 const history = createBrowserHistory();
 const preloadedState = window.__PRELOADED_STATE__;
 const composeEnhancer = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;

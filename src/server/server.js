@@ -2,14 +2,14 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import webpack from 'webpack';
-import config from './config';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import { renderRoutes } from 'react-router-config'
+import { renderRoutes } from 'react-router-config';
 import { StaticRouter } from 'react-router';
-import serverRoutes from '../frontEnd/routes/serverRoutes'
+import helmet from 'helmet';
+import serverRoutes from '../frontEnd/routes/serverRoutes';
 import reducer from '../frontEnd/reducers';
 import initialState from '../frontEnd/initialState';
 
@@ -19,7 +19,7 @@ const { ENV, PORT } = process.env;
 
 const app = express();
 
-if (config.env === 'development') {
+if (ENV === 'development') {
   console.log('Development config');
   const webpackConfig = require('../../webpack.config');
   const webpackDevMiddleware = require('webpack-dev-middleware');
@@ -31,6 +31,12 @@ if (config.env === 'development') {
   app.use(webpackDevMiddleware(compiler, serverConfig));
   app.use(webpackHotMiddleware(compiler));
 
+} else {
+  app.use(express.static(`${__dirname}/public`));
+  app.use(helmet());
+  app.use(helmet.permittedCrossDomainPolicies({ permittedPolicies: 'by-content-type' }));
+  app.use(helmet({ contentSecurityPolicy: false }));
+  app.disabled('x-powered-by');
 }
 
 const setResponse = (html, preloadedState) => {
@@ -68,5 +74,6 @@ app.get('*', renderApp);
 
 app.listen(PORT, (err) => {
   if (err) console.error();
-  else console.log('Server running on port: 3000');
+  else console.log(`Server running in mood ${ENV} on port: ${PORT}`);
 });
+
