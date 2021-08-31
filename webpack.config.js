@@ -39,13 +39,19 @@ module.exports = {
           test(module, chunks) {
             const name = module.nameForCondition && module.nameForCondition();
             return (chunk) => chunk.name !== 'vendors' && /[\\/]node_modules[\\/]/.test(name);
-          }
+          },
         },
       },
     },
   },
   module: {
     rules: [
+      {
+        enforce:'pre',
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+      },
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+/* eslint-disable react/jsx-props-no-spreading */
+import React from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header';
 import Search from '../components/Search';
@@ -32,8 +33,7 @@ const Home = ({ myList, trends, originals }) => {
           {trends.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
       </Categories>
-
-      <Categories title='Originales de PLatzi Video'>
+      <Categories title='Originales de Platzi Video'>
         <Carousel>
           {originals.map((item) => <CarouselItem key={item.id} {...item} />)}
         </Carousel>
